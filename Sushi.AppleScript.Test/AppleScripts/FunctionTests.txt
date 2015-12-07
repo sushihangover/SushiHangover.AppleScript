@@ -1,0 +1,23 @@
+﻿on IsRunningFoobar(appName)
+	return "false"
+end IsRunningFoobar
+
+on IsRunning(appName)
+	if application appName is running then
+		return "true"
+	else
+		return "false"
+	end if
+end IsRunning
+
+on IsRunning99(appName)
+	if application appName is running then
+		return "true"
+	else
+		return "false"
+	end if
+end IsRunning99
+
+on InOut(argValue)
+		return argValue
+end InOut

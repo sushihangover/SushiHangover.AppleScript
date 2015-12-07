@@ -1,0 +1,261 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB57624E1C0F5CC8003B6137 /* AppleScriptEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = DB57624D1C0F5CC8003B6137 /* AppleScriptEvent.h */; };
+		DB5762501C0F5CC8003B6137 /* AppleScriptEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = DB57624F1C0F5CC8003B6137 /* AppleScriptEvent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DB57624A1C0F5CC8003B6137 /* libAppleScriptEvent.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libAppleScriptEvent.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB57624D1C0F5CC8003B6137 /* AppleScriptEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleScriptEvent.h; sourceTree = "<group>"; };
+		DB57624F1C0F5CC8003B6137 /* AppleScriptEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleScriptEvent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB5762471C0F5CC8003B6137 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB5762411C0F5CC8003B6137 = {
+			isa = PBXGroup;
+			children = (
+				DB57624C1C0F5CC8003B6137 /* AppleScriptEvent */,
+				DB57624B1C0F5CC8003B6137 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB57624B1C0F5CC8003B6137 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB57624A1C0F5CC8003B6137 /* libAppleScriptEvent.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB57624C1C0F5CC8003B6137 /* AppleScriptEvent */ = {
+			isa = PBXGroup;
+			children = (
+				DB57624D1C0F5CC8003B6137 /* AppleScriptEvent.h */,
+				DB57624F1C0F5CC8003B6137 /* AppleScriptEvent.m */,
+			);
+			path = AppleScriptEvent;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DB5762481C0F5CC8003B6137 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB57624E1C0F5CC8003B6137 /* AppleScriptEvent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DB5762491C0F5CC8003B6137 /* AppleScriptEvent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5762531C0F5CC8003B6137 /* Build configuration list for PBXNativeTarget "AppleScriptEvent" */;
+			buildPhases = (
+				DB5762461C0F5CC8003B6137 /* Sources */,
+				DB5762471C0F5CC8003B6137 /* Frameworks */,
+				DB5762481C0F5CC8003B6137 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleScriptEvent;
+			productName = AppleScriptEvent;
+			productReference = DB57624A1C0F5CC8003B6137 /* libAppleScriptEvent.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB5762421C0F5CC8003B6137 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Sushi;
+				TargetAttributes = {
+					DB5762491C0F5CC8003B6137 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = DB5762451C0F5CC8003B6137 /* Build configuration list for PBXProject "AppleScriptEvent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB5762411C0F5CC8003B6137;
+			productRefGroup = DB57624B1C0F5CC8003B6137 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB5762491C0F5CC8003B6137 /* AppleScriptEvent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB5762461C0F5CC8003B6137 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5762501C0F5CC8003B6137 /* AppleScriptEvent.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DB5762511C0F5CC8003B6137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DB5762521C0F5CC8003B6137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DB5762541C0F5CC8003B6137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+				TEST_HOST = "cd /Users/sushi/code/sushi/AppleScriptEventLib/Apple.Script.Library/AppleScript.CLI/bin/Debug; mono AppleScript.CLI.exe";
+			};
+			name = Debug;
+		};
+		DB5762551C0F5CC8003B6137 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB5762451C0F5CC8003B6137 /* Build configuration list for PBXProject "AppleScriptEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5762511C0F5CC8003B6137 /* Debug */,
+				DB5762521C0F5CC8003B6137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5762531C0F5CC8003B6137 /* Build configuration list for PBXNativeTarget "AppleScriptEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5762541C0F5CC8003B6137 /* Debug */,
+				DB5762551C0F5CC8003B6137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB5762421C0F5CC8003B6137 /* Project object */;
+}

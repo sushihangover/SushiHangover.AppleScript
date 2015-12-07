@@ -1,0 +1,3 @@
+﻿on InOut(argValue)
+		return argValue
+end InOut

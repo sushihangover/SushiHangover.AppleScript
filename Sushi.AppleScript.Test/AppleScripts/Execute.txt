@@ -1,0 +1,1 @@
+﻿do shell script "uname -a"
