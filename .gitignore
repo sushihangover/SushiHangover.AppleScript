@@ -27,4 +27,4 @@ obj
 # XS/MD
 *.userprefs
 packages
-
+TestResult.xml
