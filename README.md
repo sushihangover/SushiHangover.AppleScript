@@ -14,7 +14,16 @@ The C# library allows you to execute AppleScript code that originates from a fil
 	cd Sushi.AppleScript.Native
 	xcodebuild
 	cd -
+	nuget restore
 	xbuild Sushi.AppleScript.sln
+	
+**Note:**
+
+	AppleScript.cs(7,7): error CS0246: The type or namespace name `MonoMac' could not be found. Are you missing an assembly reference?
+
+If you do not have a local copy of [MonoMac](https://github.com/mono/monomac), xbuild will fail. It is available via "Xamarin Studio" so you can biuld from the cmd line via:
+
+	mdtool build Sushi.AppleScript.sln
 
 ### Test:
 
@@ -26,13 +35,6 @@ The C# library allows you to execute AppleScript code that originates from a fil
 
 	mono $(MTOOLS)/nunit3-console.exe Sushi.AppleScript.Test/SushiAppleScript.Test.csproj
 
-**Note:**
-
-	AppleScript.cs(7,7): error CS0246: The type or namespace name `MonoMac' could not be found. Are you missing an assembly reference?
-
-If you do not have a local copy of [MonoMac](https://github.com/mono/monomac), xbuild will fail. It is available via "Xamarin Studio":
-
-	mdtool build Sushi.AppleScript.sln
 
 ####Example Usage:
 
