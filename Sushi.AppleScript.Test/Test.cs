@@ -21,7 +21,7 @@ namespace AppleScript.Test
 			string scpt = "./AppleScripts/ReturnValue.txt";
 			var scptInfo = new FileInfo (scpt);
 			string scriptResult;
-			var result =  AppleScript.Run (scptInfo, null, null, out scriptResult, true);
+			var result =  AppleScript.Run (scptInfo, null, null, out scriptResult);
 			Assert.AreEqual (true, result);
 			Assert.AreEqual("Hello from AppleScript", scriptResult);
 		}
@@ -76,7 +76,7 @@ namespace AppleScript.Test
 		{
 			var scriptFileInfo = new FileInfo ("./AppleScripts/ScriptFailure.txt");
 			string scriptReturnValue;
-			var executionSuccess = AppleScript.Run (scriptFileInfo, null, null, out scriptReturnValue, false);
+			var executionSuccess = AppleScript.Run (scriptFileInfo, null, null, out scriptReturnValue);
 			Assert.AreEqual (false, executionSuccess);
 			Assert.AreEqual ("A identifier can’t go after this identifier.", scriptReturnValue);
 		}
@@ -86,7 +86,7 @@ namespace AppleScript.Test
 		{
 			var scriptFileInfo = new FileInfo ("./AppleScripts/ScriptError.txt");
 			string scriptReturnValue;
-			var executionSuccess = AppleScript.Run (scriptFileInfo, null, null, out scriptReturnValue, false);
+			var executionSuccess = AppleScript.Run (scriptFileInfo, null, null, out scriptReturnValue);
 			Assert.AreEqual (false, executionSuccess);
 			Assert.AreEqual ("Can’t get application \"DoesNotExist\".", scriptReturnValue);
 		}
@@ -100,7 +100,7 @@ namespace AppleScript.Test
 				@"WhatGoesIn",
 			};
 			string scriptReturnValue;
-			var executionSuccess = AppleScript.Run (scriptFileInfo, funcName, argList, out scriptReturnValue, false);
+			var executionSuccess = AppleScript.Run (scriptFileInfo, funcName, argList, out scriptReturnValue);
 			Assert.AreEqual (true, executionSuccess);
 			Assert.AreEqual ("WhatGoesIn", scriptReturnValue);
 		}
@@ -111,7 +111,7 @@ namespace AppleScript.Test
 		{
 			var scriptFileInfo = new FileInfo ("./AppleScripts/DOESNOTEXIST.txt");
 			string scriptReturnValue;
-			AppleScript.Run (scriptFileInfo, null, null, out scriptReturnValue, false);
+			AppleScript.Run (scriptFileInfo, null, null, out scriptReturnValue);
 		}
 
 		[Test ()]
@@ -119,9 +119,9 @@ namespace AppleScript.Test
 		{
 			var scriptString = "do shell script \"uname -a\"";
 			string scriptReturnValue;
-			var executionSuccess = AppleScript.Run (scriptString, null, null, out scriptReturnValue, false);
+			var executionSuccess = AppleScript.Run (scriptString, null, null, out scriptReturnValue);
 			Assert.AreEqual (true, executionSuccess);
-			Assert.AreEqual ("Darwin", scriptReturnValue.StartsWith("Darwin"));
+			Assert.AreEqual (true, scriptReturnValue.StartsWith("Darwin"));
 		}
 	}
 }

@@ -5,10 +5,10 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle ("Sushi.AppleScript")]
-[assembly: AssemblyDescription ("AppleScript Execution with Function names and Arguments")]
+[assembly: AssemblyDescription ("AppleScript Execution with Function Names and Arguments")]
 [assembly: AssemblyConfiguration ("")]
 [assembly: AssemblyCompany ("SushiHangover")]
-[assembly: AssemblyProduct ("https://github.com/sushihangover")]
+[assembly: AssemblyProduct ("https://github.com/sushihangover/Sushi.AppleScript")]
 [assembly: AssemblyCopyright ("SushiHangover/RobertN - 2015")]
 [assembly: AssemblyTrademark ("SushiHangover/RobertN")]
 [assembly: AssemblyCulture ("")]

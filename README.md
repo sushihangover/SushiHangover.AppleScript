@@ -9,7 +9,32 @@ The C# library allows you to execute AppleScript code that originates from a fil
 * Execution success or failure
 * Return results from the function call
 
-####Example:
+### Build:
+
+	cd Sushi.AppleScript.Native
+	xcodebuild
+	cd -
+	xbuild Sushi.AppleScript.sln
+
+### Test:
+
+**Mono's supplied nunit-console:**
+
+	MONO_IOMAP=all nunit-console Sushi.AppleScript.Test/SushiAppleScript.Test.csproj
+
+**NUnit 3.x console:**
+
+	mono $(MTOOLS)/nunit3-console.exe Sushi.AppleScript.Test/SushiAppleScript.Test.csproj
+
+**Note:**
+
+	AppleScript.cs(7,7): error CS0246: The type or namespace name `MonoMac' could not be found. Are you missing an assembly reference?
+
+If you do not have a local copy of [MonoMac](https://github.com/mono/monomac), xbuild will fail. It is available via "Xamarin Studio":
+
+	mdtool build Sushi.AppleScript.sln
+
+####Example Usage:
 
 	var scptInfo = new FileInfo ("./AppleScripts/FunctionTests.txt");
 	string funcName = "IsRunning";
@@ -19,6 +44,7 @@ The C# library allows you to execute AppleScript code that originates from a fil
 	string scriptReturnValue;
 	var executionSuccess = AppleScript.Run (scptInfo, funcName, argList, out scriptReturnValue);
 
+* Consult [Test.cs](https://github.com/sushihangover/Sushi.AppleScript/blob/master/Sushi.AppleScript.Test/Test.cs) for more examples
 
 ###Supports:
 
@@ -44,11 +70,11 @@ An OS-X Universial (i386 & x86_64) Shared Library:
 
 * `libAppleScriptEvent.dylib`
 
-####Sushi.AppleScript.Test
+###Sushi.AppleScript.Test
 
 NUnit tests for Sushi.AppleScript library
 
-####Sushi.AppleScript.CLI
+###Sushi.AppleScript.CLI
 
 TODO: Provides an `osascript` style CLI utility to execute functions with AppleScript files (`osascript` does not contain this feature)
 
