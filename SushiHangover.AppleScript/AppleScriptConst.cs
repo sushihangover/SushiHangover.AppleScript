@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AppleScript
+namespace SushiHangover
 {
 	internal static class ASE
 	{

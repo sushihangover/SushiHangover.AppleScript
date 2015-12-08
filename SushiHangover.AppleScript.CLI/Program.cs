@@ -2,9 +2,9 @@
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
-using AppleScript;
+using SushiHangover;
 
-namespace AppleScript.CLI
+namespace SushiHangover.AppleScript.CLI
 {
 	class MainClass
 	{

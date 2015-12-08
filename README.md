@@ -11,11 +11,11 @@ The C# library allows you to execute AppleScript code that originates from a fil
 
 ### Build:
 
-	cd Sushi.AppleScript.Native
+	cd SushiHangover.AppleScript.Native
 	xcodebuild
 	cd -
 	nuget restore
-	xbuild Sushi.AppleScript.sln
+	xbuild SushiHangover.AppleScript.sln
 	
 **Note:**
 
@@ -23,17 +23,17 @@ The C# library allows you to execute AppleScript code that originates from a fil
 
 If you do not have a local copy of [MonoMac](https://github.com/mono/monomac), xbuild will fail. It is available via "Xamarin Studio" so you can biuld from the cmd line via:
 
-	mdtool build Sushi.AppleScript.sln
+	mdtool build SushiHangover.AppleScript.sln
 
 ### Test:
 
 **Mono's supplied nunit-console:**
 
-	MONO_IOMAP=all nunit-console Sushi.AppleScript.Test/SushiAppleScript.Test.csproj
+	MONO_IOMAP=all nunit-console SushiHangover.AppleScript.Test/SushiHangover.AppleScript.Test.csproj
 
 **NUnit 3.x console:**
 
-	mono $(MTOOLS)/nunit3-console.exe Sushi.AppleScript.Test/SushiAppleScript.Test.csproj
+	mono $(MTOOLS)/nunit3-console.exe SushiHangover.AppleScript.Test/SushiHangover.AppleScript.Test.csproj
 
 
 ####Example Usage:
@@ -62,21 +62,21 @@ Runtime/Deployment debugging available by setting an environment variable, `APPL
 
 The results are logged with the prefix `AppleScript:`, output is avaiable via Console.app.
 
-###Sushi.AppleScript
+###SushiHangover.AppleScript
 
 The C# library that provides the P/Invoke wrapper to execute AppleScript functions
 
-###Sushi.AppleScript.Native
+###SushiHangover.AppleScript.Native
 
 An OS-X Universial (i386 & x86_64) Shared Library:
 
 * `libAppleScriptEvent.dylib`
 
-###Sushi.AppleScript.Test
+###SushiHangover.AppleScript.Test
 
 NUnit tests for Sushi.AppleScript library
 
-###Sushi.AppleScript.CLI
+###SushiHangover.AppleScript.CLI
 
 TODO: Provides an `osascript` style CLI utility to execute functions with AppleScript files (`osascript` does not contain this feature)
 

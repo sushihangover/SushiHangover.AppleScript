@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{22ACDD74-E6DF-4F3A-B6BB-D90E80CB63F4}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AppleScript.Test</RootNamespace>
+    <RootNamespace>SushiHangover.AppleScript.Test</RootNamespace>
     <AssemblyName>AppleScript.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
@@ -44,9 +44,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sushi.AppleScript\SushiAppleScript.csproj">
+    <ProjectReference Include="..\SushiHangover.AppleScript\SushiHangover.AppleScript.csproj">
       <Project>{AA2E6322-F557-48BF-B841-B8251F2CF334}</Project>
-      <Name>SushiAppleScript</Name>
+      <Name>SushiHangover.AppleScript</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

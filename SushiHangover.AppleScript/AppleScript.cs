@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MonoMac.Foundation;
 
-namespace AppleScript
+namespace SushiHangover
 {
 	public static class AppleScript
 	{

@@ -3,25 +3,20 @@ using System;
 using System.IO;
 using System.Collections;
 using System.Collections.Generic;
-using AppleScript;
+using SushiHangover;
 
-namespace AppleScript.Test
+namespace SushiHangover
 {
 	[TestFixture ()]
 	public class Test
 	{
-//		[Test ()]
-//		public void TestCase ()
-//		{
-//		}
-
 		[Test ()]
 		public void ScriptFileReturnValue ()
 		{
 			string scpt = "./AppleScripts/ReturnValue.txt";
 			var scptInfo = new FileInfo (scpt);
 			string scriptResult;
-			var result =  AppleScript.Run (scptInfo, null, null, out scriptResult);
+			var result = AppleScript.Run (scptInfo, null, null, out scriptResult);
 			Assert.AreEqual (true, result);
 			Assert.AreEqual("Hello from AppleScript", scriptResult);
 		}

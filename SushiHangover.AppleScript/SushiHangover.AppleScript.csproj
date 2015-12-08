@@ -6,8 +6,8 @@
     <ProjectGuid>{AA2E6322-F557-48BF-B841-B8251F2CF334}</ProjectGuid>
     <ProjectTypeGuids>{948B3504-5B70-4649-8FE4-BDE1FB46EC69};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
-    <RootNamespace>AppleScript</RootNamespace>
-    <AssemblyName>SushiAppleScript</AssemblyName>
+    <RootNamespace>SushiHangover</RootNamespace>
+    <AssemblyName>SushiHangover.AppleScript</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,7 +51,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="..\Sushi.AppleScript.Native\build\Release\libAppleScriptEvent.dylib">
+    <None Include="..\SushiHangover.AppleScript.Native\build\Release\libAppleScriptEvent.dylib">
       <Link>libAppleScriptEvent.dylib</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
