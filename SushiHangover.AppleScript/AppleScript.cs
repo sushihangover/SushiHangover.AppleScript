@@ -4,10 +4,23 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using MonoMac.Foundation;
 
 namespace SushiHangover
 {
+	public class AppleScriptResult
+	{
+		public bool Result {
+			get;
+			set;
+		}
+		public string Value  {
+			get;
+			set;
+		}
+	}
+
 	public static class AppleScript
 	{
 		const string ASELib = ASE.ASELib;
@@ -36,6 +49,26 @@ namespace SushiHangover
 			return result;
 		}
 
+		public static async Task<AppleScriptResult> RunAsync (FileInfo scriptPath, string scriptFunction, List<string> scriptArguments, bool debug = false) {
+			string scriptReturn;
+			var scriptSuccess = Run (scriptPath, scriptFunction, scriptArguments, out scriptReturn, debug);
+			if (scriptSuccess) {
+				var foo = new AppleScriptResult (){ Result = scriptSuccess, Value = scriptReturn };
+				return foo;
+			}
+			return null;
+		}
+
+		public static async Task<AppleScriptResult> RunAsync (string scriptString, string scriptFunction, List<string> scriptArguments, bool debug = false) {
+			string scriptReturn;
+			var scriptSuccess = Run (scriptString, scriptFunction, scriptArguments, out scriptReturn, debug);
+			if (scriptSuccess) {
+				var foo = new AppleScriptResult (){ Result = scriptSuccess, Value = scriptReturn };
+				return foo;
+			}
+			return null;
+		}
+
 		public static bool Run(FileInfo scriptPath, string scriptFunction, List<string> scriptArguments, out string scriptResult, bool debug = false) {
 			if (!scriptPath.Exists) {
 				throw new System.IO.FileNotFoundException ();
@@ -54,6 +87,9 @@ namespace SushiHangover
 			scriptResult = aReturn.ToString();
 			return result;
 		}
+
+
+
 
 		static bool isEnvDebuggingSet (bool debug)
 		{
