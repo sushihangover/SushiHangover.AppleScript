@@ -51,11 +51,11 @@ namespace SushiHangover
 			return result;
 		}
 
-		public static async Task<AppleScriptResult> RunAsync (FileInfo scriptPath, string scriptFunction, List<string> scriptArguments, bool debug = false)
+		public static async Task<AppleScriptResult> RunAsync (string scriptString, string scriptFunction, List<string> scriptArguments, bool debug = false)
 		{
 			Func<AppleScriptResult> runAsyncFunc = new Func<AppleScriptResult> (() => {
 				string scriptReturnString;
-				var success = Run (scriptPath, scriptFunction, scriptArguments, out scriptReturnString, debug);
+				var success = Run (scriptString, scriptFunction, scriptArguments, out scriptReturnString, debug);
 				var foo = new AppleScriptResult (){ Result = success, Value = scriptReturnString };
 				return foo;
 			});
@@ -84,11 +84,11 @@ namespace SushiHangover
 			return result;
 		}
 
-		public static async Task<AppleScriptResult> RunAsync (string scriptString, string scriptFunction, List<string> scriptArguments, bool debug = false)
+		public static async Task<AppleScriptResult> RunAsync (FileInfo scriptPath, string scriptFunction, List<string> scriptArguments, bool debug = false)
 		{
 			Func<AppleScriptResult> runAsyncFunc = new Func<AppleScriptResult> (() => {
 				string scriptReturnString;
-				var success = Run (scriptString, scriptFunction, scriptArguments, out scriptReturnString, debug);
+				var success = Run (scriptPath, scriptFunction, scriptArguments, out scriptReturnString, debug);
 				var foo = new AppleScriptResult (){ Result = success, Value = scriptReturnString };
 				return foo;
 			});
