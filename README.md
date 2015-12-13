@@ -1,6 +1,6 @@
 # Sushi.AppleScript
 
-[https://github.com/sushihangover/Sushi.AppleScript](https://github.com/sushihangover/Sushi.AppleScript)
+[https://github.com/sushihangover/SushiHangover.AppleScript.git](https://github.com/sushihangover/SushiHangover.AppleScript.git)
 
 The C# library allows you to execute AppleScript code that originates from a file or `string` and: 
 
