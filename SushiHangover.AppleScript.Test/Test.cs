@@ -18,7 +18,7 @@ namespace SushiHangover
 			string scriptResult;
 			var result = AppleScript.Run (scptInfo, null, null, out scriptResult);
 			Assert.AreEqual (true, result);
-			Assert.AreEqual("Hello from AppleScript", scriptResult);
+			Assert.AreEqual ("Hello from AppleScript", scriptResult);
 		}
 
 		[Test ()]
@@ -101,7 +101,7 @@ namespace SushiHangover
 		}
 
 		[Test ()]
-		[ExpectedException(typeof(System.IO.FileNotFoundException))]
+		[ExpectedException (typeof(System.IO.FileNotFoundException))]
 		public void ScriptFileFunctionFileDoesNotExist ()
 		{
 			var scriptFileInfo = new FileInfo ("./AppleScripts/DOESNOTEXIST.txt");
@@ -116,7 +116,7 @@ namespace SushiHangover
 			string scriptReturnValue;
 			var executionSuccess = AppleScript.Run (scriptString, null, null, out scriptReturnValue);
 			Assert.AreEqual (true, executionSuccess);
-			Assert.AreEqual (true, scriptReturnValue.StartsWith("Darwin"));
+			Assert.AreEqual (true, scriptReturnValue.StartsWith ("Darwin"));
 		}
 	}
 }
